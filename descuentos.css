@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(https://images.unsplash.com/photo-1487088678257-3a541e6e3922?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80);
+    color: white;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+}
+header{
+    /* outline: 3px solid violet; */
+    align-items: center;
+    /* backdrop-filter: blur(10px); */
+    background: rgb(10, 75, 95);
+    color: white;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    width: 100%;
+}
+main{
+    /* outline: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    height: 430px;
+    padding: 20px;
+}
+section{
+    /* outline: 1px solid red; */
+    align-items: center;
+    background: rgb(10, 75, 95);
+    /* backdrop-filter: blur(10px); */
+    /* box-shadow: -10px 7px 10px 5px rgba(255, 255, 255, 0.616); */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    /* justify-content: space-around; */
+    text-align: center;
+    width: 400px;
+}
+form{
+    /* outline: 1px solid blue; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    justify-content: space-around;
+    font-size: 16px;
+    width: 300px;
+}
+input{
+    border-radius: 20px;
+    height: 10px;
+    font-size: 14px;
+    outline: none;
+    padding: 10px;
+}
+button{
+    align-items: center;
+    background: rgb(0, 0, 0);
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    color: white ;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    height: 30px;
+    outline: none;
+    padding: 10px;
+}
