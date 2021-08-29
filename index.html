@@ -10,21 +10,24 @@
 </head>
 <body>
     <header>
-        <h2>Porcentajes y descuentos</h2>
+        <h2>Cupones y descuentos</h2>
     </header>
     <main>
         <section>
-            <h4>Calcula el precio a pagar de tus productos con descuento</h4>    
+            <h4>Calcule el precio a pagar de sus productos</h4>    
             <form action="">
-                <label for="inputPrices">Escribe el precio de tu producto</label>
+                <label for="inputPrices">Escriba el precio de su producto</label>
                 <input id="inputPrice" type="number"/>
 
-                <label for="inputDiscount">Escribe el descuento de tu producto</label>
+                <label for="inputDiscount">Escriba el descuento de su producto</label>
                 <input id="inputDiscount" type="number"/>
-                <button type="button" onclick="calculatePriceDiscount()">
-                    Calcular el precio con descuento
-                </button>
 
+                <label for="inputCoupon">Escribe el cupon de descuento</label>
+                <input id="inputCoupon" type="text"/>
+
+                <button type="button" onclick="calculatePriceDiscount()">
+                    Calcular el precio final
+                </button>
                 <p id="resultPrice"></p>
             </form>
         </section>
