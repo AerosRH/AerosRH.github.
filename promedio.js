@@ -6,7 +6,7 @@ const lista1 = [
 ];
 
 
-function calcularMediaAritmetica(lista) {
+function calcularMediaAritmetica(lista1) {
     // let sumaLista = 0;
     // // for (let i = 0; i < lista.length; i++){
     // //     sumaLista = sumaLista + lista[i];
