@@ -69,7 +69,6 @@ function calcularMediana(valor){
     }else{
         mediana = listaOrdenada[mitadLista];
     }
-    console.log(mediana)
     return mediana;
 }
 

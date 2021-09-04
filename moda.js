@@ -30,7 +30,7 @@ const calcularModa = (elementos) => {
             listaCount[elemento] += 1;
         }
         else {
-            listaCount[elemento] = 1
+            listaCount[elemento] = 1;
         }
     })
     contandoElementos = Object.entries(listaCount);
