@@ -64,7 +64,7 @@ function calcularMediana(valor){
     let mediana;
     if(listaOrdenada.length % 2 ==0){
         let elemento1 = listaOrdenada[mitadLista];
-        let elemento2 = listaOrdenada[mitadLista] - 1;
+        let elemento2 = listaOrdenada[mitadLista - 1];
         mediana = (Number(elemento1) + Number(elemento2)) / 2;
     }else{
         mediana = listaOrdenada[mitadLista];
