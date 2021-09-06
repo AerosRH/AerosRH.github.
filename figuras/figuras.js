@@ -4,7 +4,6 @@ console.group("Cuadrado");
 function perimetroCuadrado(lado){
     return lado * 4;
 }
-perimetroCuadrado()
 
 function areaCuadrado(lado){
     return lado * lado;
@@ -66,7 +65,8 @@ function alturaIsosceles(lado1, lado2, base){
     if (lado1 === lado2 && lado1 != base){
         return (Math.sqrt((lado1*lado1)- (base * base / 4)));
     }else{
-        alert("No es un triangulo isosceles");
+        const mensaje = document.getElementById("resulTrianguloIsosceles")
+        mensaje.innerText = "Los datos proporcionados no corresponden a un triangulo isosceles";
     }
 }
 
@@ -77,15 +77,16 @@ function calcularPerimetroCuadrado(){
     const value = input.value; //obtenemos el valor 
 
     const perimetro = perimetroCuadrado(value);
-    alert(perimetro);
+    const result = document.getElementById("resultCuadrado")
+    result.innerText = "El perimetro es: " + perimetro;
 }
 
 function calcularAreaCuadrado(){
     const input = document.getElementById("inputCuadrado"); //Permite obtener ese elemento HTML en JS
     const value = input.value; //obtenemos el valor 
-
     const area = areaCuadrado(value);
-    alert(area);
+    const result = document.getElementById("resultCuadrado")
+    result.innerText = "El area es: " + area;
 }
 // Triangulo
 function calcularPerimetroTriangulo(){
@@ -100,7 +101,8 @@ function calcularPerimetroTriangulo(){
     const base = input3.value;
 
     const perimetro = perimetroTriangulo(value1, value2, base);
-    alert(perimetro);
+    const result = document.getElementById("resultTriangulo")
+    result.innerText = "El perimetro es: " + perimetro;
 }
 
 function calcularAreaTriangulo(){
@@ -112,7 +114,8 @@ function calcularAreaTriangulo(){
     const altura = input1.value;
 
     const area = areaTriangulo(altura, base);
-    alert(area);
+    const result = document.getElementById("resultTriangulo")
+    result.innerText = "El area es: " + area;
 }
 
 //Circulo
@@ -121,7 +124,8 @@ function calcularPerimetroCirculo(){
     const value = input.value;
 
     const perimetro = perimetroCirculo(value);
-    alert(perimetro);
+    const result = document.getElementById("resultCirculo")
+    result.innerText = "El perimetro es: " + perimetro;
 }
 
 function calcularAreaCirculo(){
@@ -129,7 +133,8 @@ function calcularAreaCirculo(){
     const value = input.value;
 
     const area = areaCirculo(value);
-    alert(area);
+    const result = document.getElementById("resultCirculo")
+    result.innerText = "El area es: " + area;
 }
 
 //Isosceles
@@ -142,5 +147,10 @@ function calcularAlturaIsosceles(){
     const base = input2.value;
 
     const altura = alturaIsosceles(value, value1, base);
-    alert(altura);
+    const result = document.getElementById("resulTrianguloIsosceles")
+    if (altura == undefined){
+        result.innerText = "Los datos proporcionados no son de un triangulo isosceles"
+    }else{
+        result.innerText = "La altura es es: " + altura;
+    }
 }

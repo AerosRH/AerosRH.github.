@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./figuras.css">
     <title>Figuras Geometricas</title>
 </head>
 <body>
@@ -20,6 +22,7 @@
             <input id="inputCuadrado" type="number"/>
             <button type="button" onclick="calcularPerimetroCuadrado()">Calcular Perimetro</button>
             <button type="button" onclick="calcularAreaCuadrado()">Calcular Area</button>
+            <p id="resultCuadrado"></p>
         </form>
         <form action="">
             <label for="inputTriangulo">
@@ -31,6 +34,7 @@
             <input id="inputAlturaTriangulo" type="number">
             <button type="button" onclick="calcularPerimetroTriangulo()" >Calcular Perimetro</button>
             <button type="button" onclick="calcularAreaTriangulo()" >Calcular Area</Area></button>
+            <p id="resultTriangulo"></p>
         </form>
         <form action="">
             <label for="inputCirculo">
@@ -39,6 +43,7 @@
             <input id="inputCirculo" type="number"/>
             <button type="button" onclick="calcularPerimetroCirculo()">Calcular Perimetro</button>
             <button type="button" onclick="calcularAreaCirculo()">Calcular Area</button>
+            <p id="resultCirculo"></p>
         </form>
         <form action="">
             <label for="inputIsosceles">
@@ -48,6 +53,7 @@
             <input id="inputLado2Isosceles" type="number">
             <input id="inputBaseIsosceles" type="number">
             <button type="button" onclick="calcularAlturaIsosceles()">Calcular Altura del Trianglo</button>
+            <p id="resulTrianguloIsosceles"></p>
         </form>
     </section>
     <script src="./figuras.js"></script>
