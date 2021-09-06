@@ -76,7 +76,7 @@ function datosMediana(){
     const numbers = document.getElementById("inputNumbers");
     const numberValue = numbers.value;
     let resultado = calcularMediana(numberValue);
-    const resultMediana = document.getElementById("resultPromedio");
-    resultMediana.innerText = "EL promedio es: " + resultado;
+    const resultMediana = document.getElementById("resultMediana");
+    resultMediana.innerText = "La mediana es: " + resultado;
     console.log(resultado);
 }
