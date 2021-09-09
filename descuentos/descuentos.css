@@ -42,12 +42,13 @@ section{
 }
 form{
     /* outline: 1px solid blue; */
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
     height: 300px;
     justify-content: space-around;
     font-size: 15px;
+    margin-top: 30px;
     width: 300px;
 }
 input{

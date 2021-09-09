@@ -124,8 +124,9 @@ function calcularPerimetroCirculo(){
     const value = input.value;
 
     const perimetro = perimetroCirculo(value);
+    const perimetroMenosDecimales = perimetro.toFixed(4);
     const result = document.getElementById("resultCirculo")
-    result.innerText = "El perimetro es: " + perimetro;
+    result.innerText = "El perimetro es: " + perimetroMenosDecimales;
 }
 
 function calcularAreaCirculo(){
@@ -133,8 +134,9 @@ function calcularAreaCirculo(){
     const value = input.value;
 
     const area = areaCirculo(value);
+    const areaMenosDecimales = area.toFixed(4);
     const result = document.getElementById("resultCirculo")
-    result.innerText = "El area es: " + area;
+    result.innerText = "El area es: " + areaMenosDecimales;
 }
 
 //Isosceles
