@@ -32,30 +32,33 @@
             <button class="main__form--button" type="button" onclick="calcularAreaCirculo()">Calcular Area</button>
             <p class="main__form--mensaje" id="resultCirculo"></p>
         </form>
-        <form action="">
-            <label for="inputTriangulo">
+        <form class="main__formTriangle" action="">
+            <label class="main__form--label" for="inputTriangulo">
                 Escribe cuanto miden los lados y la altura de tu triangulo
             </label>
-            <input id="inputLado1Triangulo" type="number">
-            <input id="inputLado2Triangulo" type="number">
-            <input id="inputBaseTriangulo" type="number">
-            <input id="inputAlturaTriangulo" type="number">
-            <button type="button" onclick="calcularPerimetroTriangulo()" >Calcular Perimetro</button>
-            <button type="button" onclick="calcularAreaTriangulo()" >Calcular Area</Area></button>
-            <p id="resultTriangulo"></p>
+            <input placeholder="Lado 1" class="main__form--input" id="inputLado1Triangulo" type="number">
+            <input placeholder="Lado 2" class="main__form--input" id="inputLado2Triangulo" type="number">
+            <input placeholder="Base" class="main__form--input" id="inputBaseTriangulo" type="number">
+            <input placeholder="Altura" class="main__form--input" id="inputAlturaTriangulo" type="number">
+            <button class="main__form--button" type="button" onclick="calcularPerimetroTriangulo()" >Calcular Perimetro</button>
+            <button class="main__form--button" type="button" onclick="calcularAreaTriangulo()" >Calcular Area</Area></button>
+            <p class="main__form--mensaje" id="resultTriangulo"></p>
         </form>
 
-        <form action="">
-            <label for="inputIsosceles">
+        <form class="main__formTriangleIsoceles" action="">
+            <label class="main__form--label" for="inputIsosceles">
                 Escribe cuanto miden los lados y la base del triangulo
             </label>
-            <input id="inputLado1Isosceles" type="number">
-            <input id="inputLado2Isosceles" type="number">
-            <input id="inputBaseIsosceles" type="number">
-            <button type="button" onclick="calcularAlturaIsosceles()">Calcular Altura del Trianglo</button>
-            <p id="resulTrianguloIsosceles"></p>
+            <input placeholder="Lado 1" class="main__form--input" id="inputLado1Isosceles" type="number">
+            <input placeholder="Lado 2" class="main__form--input" id="inputLado2Isosceles" type="number">
+            <input placeholder="Base" class="main__form--input" id="inputBaseIsosceles" type="number">
+            <button class="main__form--buttonIsosceles" type="button" onclick="calcularAlturaIsosceles()">Calcular altura del Trianglo</button>
+            <p class="main__form--mensaje" id="resulTrianguloIsosceles"></p>
         </form>
     </section>
+    <footer class= "footer">
+        <p>Codigo desarrollado en Septiembre 2021</p>
+    </footer>
     <script src="./figuras.js"></script>
 </body>
 </html>

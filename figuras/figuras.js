@@ -149,10 +149,11 @@ function calcularAlturaIsosceles(){
     const base = input2.value;
 
     const altura = alturaIsosceles(value, value1, base);
+    const alturaMenosDecimales = altura.toFixed(4);
     const result = document.getElementById("resulTrianguloIsosceles")
-    if (altura == undefined){
+    if (alturaMenosDecimales == undefined){
         result.innerText = "Los datos proporcionados no son de un triangulo isosceles"
     }else{
-        result.innerText = "La altura es es: " + altura;
+        result.innerText = "La altura es es: " + alturaMenosDecimales;
     }
 }
