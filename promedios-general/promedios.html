@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./promedios.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <title>Promedios</title>
+</head>
+<body>
+    <header>
+        <h2>Calcula los diferentes promedios</h2>
+    </header>
+    <section class="main">
+        <form action="" class="main__form">
+            <label class="main__form--label" for="inputArmonica">
+                Calcular la armonica, introduce los datos.
+            </label>
+            <input class="main__form--input" id="inputArmonica" type="text"/>
+            <button class="main__form--button" type="button" onclick="datosArmonica()">Calcular Armonica</button>
+            <p class="main__form--mensaje" id="spaceArmonica"></p>
+        </form>
+        <form action="" class="main__form">
+            <label class="main__form--label" for="inputCuadrado">
+                Calcula la mediana, introduce los datos.
+            </label>
+            <input class="main__form--input" id="inputMediana" type="texto">
+            <button class="main__form--button" type="button" onclick="datosMediana()">Calcular Mediana</button>
+            <p class="main__fomr--mensaje" id="spaceMediana"></p>
+        </form>
+        <form action="" class="main__form">
+            <label class="main__form--label" for="inputCuadrado">
+                Calcula la moda, introduce los datos.
+            </label>
+            <input class="main__form--input" id="inputModa" type="text">
+            <button class="main__form--button" type="button" onclick="datosModa()">Calcular Moda</button>
+            <p class="main__fomr--mensaje" id="spaceModa"></p>
+        </form>
+        <form action="" class="main__form">
+            <label class="main__form--label" for="inputCuadrado">
+                Calcula el promedio, introduce los datos.
+            </label>
+            <input class="main__form--input" id="inputPromedio" type="texto">
+            <button class="main__form--button" type="button" onclick="datosPromedio()">Calcular Promedio</button>
+            <p class="main__fomr--mensaje" id="spacePromedio"></p>
+        </form>
+    </section>
+    <footer>
+        <p>
+            Desarrollado en septiembre 2021 (15)
+        </p>
+    </footer>
+    <script src="./promedios.js"></script>
+</body>
+</html>

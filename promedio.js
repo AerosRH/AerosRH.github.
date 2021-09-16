@@ -32,7 +32,8 @@ function datosPromedio(){
     const numbers = document.getElementById("inputNumbers");
     const numberValue = numbers.value;
     let resultado = calcularMediaAritmetica(numberValue);
+    let promedioMenosDecimales = resultado.toFixed(4);
     const resultPromedio = document.getElementById("resultPromedio");
-    resultPromedio.innerText = "EL promedio es: " + resultado;
-    console.log(resultado);
+    resultPromedio.innerText = "EL promedio es: " + promedioMenosDecimales;
+    // console.log(resultado);
 }

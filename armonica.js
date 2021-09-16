@@ -34,5 +34,8 @@ function datosArmonica(){
     console.log(datos);
     const datosValue = datos.value;
     let resultado = calcularArmonica(datosValue);
+    let armonicaMenosDecimales = resultado.toFixed(4);
+    const resultArmonica = document.getElementById("spaceArmonica");
+    resultArmonica.innerText = "La armonica es: " + armonicaMenosDecimales;
     console.log(resultado);
 };
