@@ -42,7 +42,7 @@ section{
 }
 form{
     /* outline: 1px solid blue; */
-    align-items: flex-start;
+    align-items: center;
     display: flex;
     flex-direction: column;
     height: 300px;
